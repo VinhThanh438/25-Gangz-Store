@@ -1,0 +1,95 @@
+// Header
+
+header {
+    height: 100px;
+    background-color: $white-color;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: $black-color;
+    text-transform: uppercase;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo a img {
+    width: 120px;
+    height: auto;
+    margin-top: 8px;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.header-navbar li {
+    margin: 0 10px;
+}
+
+.header-navbar li a {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $white-color;
+    border-radius: 10px;
+}
+
+.header-navbar li a:hover {
+    border: 1px solid $main-bg-color;
+    border-radius: 10px;
+}
+
+.account-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-navbar li {
+    margin: 0 6px;
+}
+
+.account-navbar li a {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    text-transform: none;
+}
+
+.account-navbar li a:hover {
+    color: $main-font-color;
+}
+
+// ***********************
+
+#container {
+    margin-top: 100px;
+}
+
+// Slider
+
+.slider img {
+    width: 100%;
+}
+
+// ***********************
