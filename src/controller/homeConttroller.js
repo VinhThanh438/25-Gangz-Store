@@ -1,6 +1,10 @@
+import pool from "../config/connectDB";
+
 const Controller = {
-    homePage(req, res) {
-        return res.render("home");
+    async homePage(req, res) {
+        pool.execute("select * from `product-list`", (err, results, field) => {
+            return res.render("home", { data: results });
+        });
     },
 };
 

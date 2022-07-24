@@ -1,10 +1,27 @@
 
-.grid-row {
+.grid {
     max-width: 68%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.grid-row {
+    margin-left: -11px;
+    margin-right: -11px;
+}
+
+.grid-row-4 {
+    padding: 0 11px !important;
+}
+
+.padding-cart {
+    padding: 0 10px;
 }
 
 .header-navbar--active {
-    background-color: $main-bg-color;
-    color: $white-color;
+    border: 1px solid $black-color;
+    margin: -1px;
+}
+
+.slider-active {
+    display: block !important;
 }
