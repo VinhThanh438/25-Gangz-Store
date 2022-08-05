@@ -1,9 +1,10 @@
-import pool from "../config/connectDB";
+import pool from '../config/connectDB';
+import data from '../config/handleErr';
 
 const Controller = {
     async homePage(req, res) {
-        pool.execute("select * from `product-list`", (err, results, field) => {
-            return res.render("home", { data: results });
+        pool.execute('Select * from user1', (err, data) => {
+            return res.render('home', { data: data });
         });
     },
 };
